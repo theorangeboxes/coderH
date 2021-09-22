@@ -1,0 +1,12 @@
+@import "./style.css";
+
+.cuidados {
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  padding: 0px 10px 10px 10px;
+}
+.cuidados h1{
+    display: block;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}

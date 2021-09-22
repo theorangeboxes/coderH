@@ -1,0 +1,122 @@
+$main-bg-color: #8be6c9;
+$second-bg-color: #3ccfa1;
+$third-bg-color: #18ad7e;
+$text-inputFocus: rgb(255, 255, 255);
+
+.quienesSomos {
+  grid-area: Qs;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: auto;
+  h1{
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .titulo {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+  }
+  .parrafoPrincipal {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    .detalle {
+      height: auto;
+      width: 100%;
+
+      padding: 20px;
+    }
+    .imagen {
+      height: auto;
+      width: 100%;
+    }
+    //ordeno de tal forma que quede imagen-texto, texto-imagen
+    .g1 {
+      order: 0;
+    }
+    .g2 {
+      order: 1;
+    }
+    .g3 {
+      order: 3;
+    }
+    .g4 {
+      order: 2;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .quienesSomos {
+    .main {
+      justify-content: space-around;
+      .imagen {
+        // height: 300px;
+        // width: 400px;
+        height: auto;
+          width: 50%;
+      }
+      .detalle {
+        padding: 5px 10px 10px 10px;
+        // height: 300px;
+        // width: 400px;
+        height: auto;
+          width: 50%;
+      }
+      .g1 {
+        order: 0;
+      }
+      .g2 {
+        order: 1;
+      }
+      .g3 {
+        order: 2;
+      }
+      .g4 {
+        order: 3;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+    .quienesSomos {
+      .main {
+        justify-content: center;
+
+        .imagen {
+          height: auto;
+          width: 40%;
+          margin-top:10px;
+        }
+        .detalle {
+          padding: 5px 10px 10px 10px;
+          height: auto;
+          width: 40%;
+          margin-top:10px;
+        }
+        .g1 {
+          order: 0;
+        }
+        .g2 {
+          order: 1;
+        }
+        .g3 {
+          order: 2;
+        }
+        .g4 {
+          order: 3;
+        }
+      }
+    }
+  }

@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-bg-color: #8be6c9;
+  --second-bg-color: #3ccfa1;
+  --third-bg-color: #18ad7e;
+}
+
+body {
+  background-color: var(--main-bg-color);
+
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+/* .contenedor {
+  height: auto;
+  width: 100%;
+
+  max-width: 1300px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "video video video"
+    "caduco caduco caduco"
+    "perenne perenne perenne"
+    "frutos frutos frutos"
+    "carrucel carrucel carrucel"
+    "footer footer footer";
+} */
+
+.header {
+  background: linear-gradient(
+    to bottom,
+    var(--third-bg-color),
+    var(--main-bg-color)
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  grid-area: header;
+}
+.headerTitulo {
+  text-align: center;
+  font-size: 37px;
+  font-family: "Lobster", cursive;
+  letter-spacing: 6px;
+}
+.headerIcons {
+  display: flex;
+  padding: 5px 0px;
+
+  justify-content: space-evenly;
+}
+
+.headerBuscador {
+  /* background-color: blue; */
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.headerBuscador input {
+  outline: none;
+  height: 40px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 30px;
+  letter-spacing: 3px;
+
+  transition: all 1s;
+}
+.headerBuscador input:focus {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+.header img {
+  height: 35px;
+  width: auto;
+  margin: 0px 2px 0px 2px;
+}
+
+nav {
+  height: auto;
+  text-align: center;
+  grid-area: menu;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  height: 40px;
+  width: auto;
+  /* position: relative; */
+  /* padding: 5px 10px; */
+  /* background-color: rgb(16, 131, 22); */
+
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid black;
+  /* border-radius: 5px; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  /* font-weight: 10; */
+  text-shadow: black 1px 6px 20px;
+  letter-spacing: 5px;
+  /* padding: 2px 2px 2px 2px;
+  margin-top: 5px; */
+
+  transition: all 0.3s;
+}
+nav li:hover {
+  text-decoration: none;
+  background-color: var(--third-bg-color);
+  color: #000;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.video {
+  grid-area: video;
+}
+.caduco {
+  grid-area: caduco;
+}
+.perenne {
+  grid-area: perenne;
+}
+.frutos {
+  grid-area: frutos;
+}
+
+.caduco,
+.perenne,
+.frutos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 30px; */
+}
+.caduco h1,
+.perenne h1,
+.frutos h1 {
+  position: absolute;
+  padding-left: 20px;
+  font-size: 70px;
+  text-shadow: #ccc 1px 6px 20px;
+  font-family: fantasy;
+  color: white;
+  letter-spacing: 20px;
+}
+
+.caduco img,
+.perenne img,
+.frutos img {
+  width: 100%;
+}
+#carouselExampleControls {
+  margin: 10px 0px;
+  grid-area: carrucel;
+}
+.imagenes {
+  grid-area: imagenes;
+}
+
+.cuidados {
+  grid-area: cuidados;
+}
+
+.loMasComprado {
+  grid-area: loMasComprado;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* .contenedor {
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "header header header"
+      "menu menu menu"
+      "video video video"
+      "caduco perenne frutos"
+      "carrucel carrucel carrucel"
+      "footer footer footer";
+  } */
+
+  nav ul li {
+    display: inline-block;
+    height: 30px;
+
+    /* background-color: rgb(16, 131, 22); */
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 1px;
+    /* font-size: 18px;
+    font-weight: 600;
+    padding: 2px 2px 2px 2px;
+    margin-top: 5px; */
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+  }
+  nav ul li:hover {
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+
+    border: none;
+  }
+  nav a {
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+  }
+  .caduco h1,
+  .perenne h1,
+  .frutos h1 {
+    position: absolute;
+    padding-left: 5px;
+    font-size: 40px;
+    text-shadow: rgb(14, 9, 9) 1px 6px 20px;
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      var(--third-bg-color),
+      var(--main-bg-color)
+    );
+  }
+
+  .header {
+    background: none;
+  }
+  .contenedor {
+    background-color: transparent;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    grid-area: header;
+  }
+
+  .video video {
+    border-radius: 5px;
+    margin: 5px 0px;
+  }
+
+  .caduco,
+  .perenne,
+  .frutos {
+    padding: 0px 3px;
+  }
+  .caduco img,
+  .perenne img,
+  .frutos img {
+    border-radius: 5px;
+  }
+
+  .carousel-item img {
+    border-radius: 5px;
+  }
+}
