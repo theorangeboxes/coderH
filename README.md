@@ -1,8 +1,8 @@
-#Proyecto CODEHOUSE
+# Proyecto CODEHOUSE
 
-##SEO
+## SEO
 
-###En el archivo index.html sumé el SEO con las siguientes características:
+### En el archivo index.html sumé el SEO con las siguientes características:
 
 Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “venta y cuidado de bonsai en argentina, 50 años de experiencia"
 
