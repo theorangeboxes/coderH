@@ -92,7 +92,7 @@ $text-inputFocus: rgb(255, 255, 255);
 @media only screen and (min-width: 1024px) {
     .quienesSomos {
       .main {
-        justify-content: center;
+        justify-content:  space-around;
 
         .imagen {
           height: auto;

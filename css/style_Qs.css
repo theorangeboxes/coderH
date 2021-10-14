@@ -1,5 +1,5 @@
 @import "./style.css";
-@import "./css/styleQs.css";
+@import "./styleQs.css";
 
 .contenedor {
   width: 100%;
@@ -25,4 +25,5 @@
     max-width: 1000px;
     margin: 20px auto;
   }
+ 
 }

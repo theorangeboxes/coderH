@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: 1024px) {
   .quienesSomos .main {
-    justify-content: center; }
+    justify-content: space-around; }
     .quienesSomos .main .imagen {
       height: auto;
       width: 40%;
