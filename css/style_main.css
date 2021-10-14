@@ -1,48 +1,43 @@
-@import './style.css';
+@import "./style.css";
 
 .contenedor {
-    height: auto;
-    width: 100%;
-  
-    max-width: 1300px;
-  
-    display: grid;
-  
+  height: auto;
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "tituloMain tituloMain tituloMain"
+    "video video video"
+    "caduco caduco caduco"
+    "perenne perenne perenne"
+    "frutos frutos frutos"
+    "carrucel carrucel carrucel"
+    "footer footer footer";
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas:
       "header header header"
       "menu menu menu"
       "tituloMain tituloMain tituloMain"
       "video video video"
-      "caduco caduco caduco"
-      "perenne perenne perenne"
-      "frutos frutos frutos"
+      "caduco perenne frutos"
       "carrucel carrucel carrucel"
       "footer footer footer";
   }
+}
 
-  @media only screen and (min-width: 768px) {
-    .contenedor {
-      /* height: 100vh; */
-      /* background-color: grey; */
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(6, auto);
-      grid-template-areas:
-        "header header header"
-        "menu menu menu"
-        "tituloMain tituloMain tituloMain"
-        "video video video"
-        "caduco perenne frutos"
-        "carrucel carrucel carrucel"
-        "footer footer footer";
-    }
+@media only screen and (min-width: 1024px) {
+  .contenedor {
+    background-color: transparent;
+    max-width: 1000px;
+    margin: 20px auto;
   }
-
-  @media only screen and (min-width: 1024px) {
-    .contenedor {
-      background-color: transparent;
-      max-width: 1000px;
-      margin: 20px auto;
-    }
-  }
+}

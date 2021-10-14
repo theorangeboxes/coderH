@@ -1,4 +1,14 @@
-# Proyecto CODEHOUSE
+# Proyecto CODEHOUSE HTML+CSS
+
+## Comentarios generales
+
+Se creo una web sobre un negocio de venta y cuidado de bonsais. Fué encarada con perspectiva FirstMobile, siendo responsive sobre otros 2 tamaños de pantalla.
+
+Incluye 2 modulos realizados con el pre-procesador Sass: "Form Contacto" y "QuienesSomos"
+
+Las pantallas principales se maquetaron con GRID y luego se utilizo FLEX para organizar los contenidos.
+
+Se utilizó BOOSTRAP para generar el carrucel.
 
 ## SEO
 
@@ -13,3 +23,4 @@ Encabezado: para el encabezado del h1 utilicé el texto “BONSAI DEL SUR”
 EXTRA: 
 - Agregue tambien metadata para que cuando se copie el LINK se muestre titulo y una imagen.
 - Agregada pagina 404 para redirigir cuando se accede a una ruta inválida.
+
