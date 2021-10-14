@@ -10,6 +10,8 @@ Las pantallas principales se maquetaron con GRID y luego se utilizo FLEX para or
 
 Se utilizó BOOSTRAP para generar el carrucel.
 
+Se profundizó el manejo de animaciones dentro del form de contacto e input "buscador"
+
 ## SEO
 
 ### En el archivo index.html sumé el SEO con las siguientes características:
